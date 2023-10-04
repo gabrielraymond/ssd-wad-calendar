@@ -31,7 +31,7 @@ const LayoutComponents = ({ children, isShow }: Props) => {
 
   return (
     <div className="layout flex">
-      <Loading />
+      {/* <Loading /> */}
       <div className={showSidebar}>
         <Sidebar />
       </div>
