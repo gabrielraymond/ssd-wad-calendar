@@ -9,8 +9,11 @@ interface CalendarDayProps {
 
 const CalendarDay: React.FC<CalendarDayProps> = ({ date, onClick, events }) => {
   return (
-    <td className="border-2 w-[250px] align-top" onClick={onClick}>
-      <div className={`cursor-pointer pb-2 h-fit`}>
+    <td
+      className="border-2 w-[250px] align-top cursor-pointer"
+      onClick={onClick}
+    >
+      <div className={` pb-2 h-14`}>
         <p>{date.getDate()}</p>
       </div>
       <div onClick={(e) => e.stopPropagation()}>{events}</div>
