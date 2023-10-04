@@ -67,7 +67,12 @@ const EventList: React.FC<EventListProps> = ({
     <div>
       <ul>
         {dayEvents.map((event: any, index: any) => (
-          <Card event={event} onDelete={onDelete} handleUpdate={handleUpdate} />
+          <Card
+            event={event}
+            onDelete={onDelete}
+            handleUpdate={handleUpdate}
+            key={index}
+          />
         ))}
       </ul>
 
